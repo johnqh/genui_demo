@@ -54,7 +54,7 @@ export default function DemoPage() {
   return (
     <div className="h-screen flex flex-col overflow-hidden">
       <DemoTopBar />
-      <div className="flex-1 min-h-0">
+      <div className="flex-1 min-h-0 flex flex-col">
         <MasterDetailLayout
           masterContent={masterContent}
           detailContent={detailContent}

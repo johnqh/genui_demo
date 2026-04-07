@@ -10,26 +10,29 @@ export const collectionsData: IRenderable[] = [
         {
           id: 'list-1',
           view: {
-            layout: 'line_title_subtitle',
+            layout: 'line_action',
             title: { text: 'report.pdf' },
             subtitle: { text: 'Modified 2 hours ago' },
           },
+          destination: { value: 'report.pdf' },
         },
         {
           id: 'list-2',
           view: {
-            layout: 'line_title_subtitle',
+            layout: 'line_action',
             title: { text: 'notes.md' },
             subtitle: { text: 'Modified yesterday' },
           },
+          destination: { value: 'notes.md' },
         },
         {
           id: 'list-3',
           view: {
-            layout: 'line_title_subtitle',
+            layout: 'line_action',
             title: { text: 'budget.xlsx' },
             subtitle: { text: 'Modified 3 days ago' },
           },
+          destination: { value: 'budget.xlsx' },
         },
       ],
     },
@@ -40,10 +43,26 @@ export const collectionsData: IRenderable[] = [
       layout: 'list_simple',
       title: { text: 'Fruits' },
       children: [
-        { id: 'fruit-1', view: { layout: 'line_title', title: { text: 'Apple' } } },
-        { id: 'fruit-2', view: { layout: 'line_title', title: { text: 'Banana' } } },
-        { id: 'fruit-3', view: { layout: 'line_title', title: { text: 'Cherry' } } },
-        { id: 'fruit-4', view: { layout: 'line_title', title: { text: 'Date' } } },
+        {
+          id: 'fruit-1',
+          view: { layout: 'line_action', title: { text: 'Apple' } },
+          destination: { value: 'apple' },
+        },
+        {
+          id: 'fruit-2',
+          view: { layout: 'line_action', title: { text: 'Banana' } },
+          destination: { value: 'banana' },
+        },
+        {
+          id: 'fruit-3',
+          view: { layout: 'line_action', title: { text: 'Cherry' } },
+          destination: { value: 'cherry' },
+        },
+        {
+          id: 'fruit-4',
+          view: { layout: 'line_action', title: { text: 'Date' } },
+          destination: { value: 'date' },
+        },
       ],
     },
   },
@@ -53,9 +72,21 @@ export const collectionsData: IRenderable[] = [
       layout: 'list_sectioned',
       title: { text: 'Contacts' },
       children: [
-        { id: 'contact-1', view: { layout: 'line_title', title: { text: 'Alice Johnson' } } },
-        { id: 'contact-2', view: { layout: 'line_title', title: { text: 'Bob Smith' } } },
-        { id: 'contact-3', view: { layout: 'line_title', title: { text: 'Charlie Brown' } } },
+        {
+          id: 'contact-1',
+          view: { layout: 'line_action', title: { text: 'Alice Johnson' } },
+          destination: { value: 'alice' },
+        },
+        {
+          id: 'contact-2',
+          view: { layout: 'line_action', title: { text: 'Bob Smith' } },
+          destination: { value: 'bob' },
+        },
+        {
+          id: 'contact-3',
+          view: { layout: 'line_action', title: { text: 'Charlie Brown' } },
+          destination: { value: 'charlie' },
+        },
       ],
     },
   },
@@ -68,20 +99,24 @@ export const collectionsData: IRenderable[] = [
         {
           id: 'para-1',
           view: {
-            layout: 'paragraph',
+            layout: 'line_action',
             title: { text: 'v2.0 - Major Update' },
-            details: { text: 'Redesigned dashboard with improved performance and new widgets.' },
+            subtitle: {
+              text: 'Redesigned dashboard with improved performance and new widgets.',
+            },
           },
+          destination: { value: 'v2.0' },
         },
         {
           id: 'para-2',
           view: {
-            layout: 'paragraph',
+            layout: 'line_action',
             title: { text: 'v1.5 - Bug Fixes' },
-            details: {
+            subtitle: {
               text: 'Fixed login issues on Safari and improved error handling throughout.',
             },
           },
+          destination: { value: 'v1.5' },
         },
       ],
     },
@@ -95,34 +130,38 @@ export const collectionsData: IRenderable[] = [
         {
           id: 'grid-1',
           view: {
-            layout: 'embedded_image',
+            layout: 'tile',
             title: { text: 'Mountain' },
             image: { url: 'https://picsum.photos/seed/mountain/200/200' },
           },
+          destination: { value: 'mountain' },
         },
         {
           id: 'grid-2',
           view: {
-            layout: 'embedded_image',
+            layout: 'tile',
             title: { text: 'Ocean' },
             image: { url: 'https://picsum.photos/seed/ocean/200/200' },
           },
+          destination: { value: 'ocean' },
         },
         {
           id: 'grid-3',
           view: {
-            layout: 'embedded_image',
+            layout: 'tile',
             title: { text: 'Forest' },
             image: { url: 'https://picsum.photos/seed/forest/200/200' },
           },
+          destination: { value: 'forest' },
         },
         {
           id: 'grid-4',
           view: {
-            layout: 'embedded_image',
+            layout: 'tile',
             title: { text: 'Desert' },
             image: { url: 'https://picsum.photos/seed/desert/200/200' },
           },
+          destination: { value: 'desert' },
         },
       ],
     },
@@ -223,11 +262,13 @@ export const collectionsData: IRenderable[] = [
       children: [
         {
           id: 'stack-1',
-          view: { layout: 'line_title', title: { text: 'Card A' } },
+          view: { layout: 'line_action', title: { text: 'Card A' } },
+          destination: { value: 'card-a' },
         },
         {
           id: 'stack-2',
-          view: { layout: 'line_title', title: { text: 'Card B' } },
+          view: { layout: 'line_action', title: { text: 'Card B' } },
+          destination: { value: 'card-b' },
         },
       ],
     },
@@ -263,26 +304,29 @@ export const collectionsData: IRenderable[] = [
         {
           id: 'vstack-1',
           view: {
-            layout: 'line_title_subtitle',
+            layout: 'line_action',
             title: { text: 'Step 1' },
             subtitle: { text: 'Create project' },
           },
+          destination: { value: 'step-1' },
         },
         {
           id: 'vstack-2',
           view: {
-            layout: 'line_title_subtitle',
+            layout: 'line_action',
             title: { text: 'Step 2' },
             subtitle: { text: 'Install dependencies' },
           },
+          destination: { value: 'step-2' },
         },
         {
           id: 'vstack-3',
           view: {
-            layout: 'line_title_subtitle',
+            layout: 'line_action',
             title: { text: 'Step 3' },
             subtitle: { text: 'Start coding' },
           },
+          destination: { value: 'step-3' },
         },
       ],
     },
@@ -322,17 +366,29 @@ export const collectionsData: IRenderable[] = [
       children: [
         {
           id: 'tab-overview',
-          view: { title: { text: 'Overview' }, layout: 'line_text', details: { text: 'This is the overview content panel.' } },
+          view: {
+            title: { text: 'Overview' },
+            layout: 'line_text',
+            details: { text: 'This is the overview content panel.' },
+          },
           destination: { value: 'overview' },
         },
         {
           id: 'tab-details',
-          view: { title: { text: 'Details' }, layout: 'line_text', details: { text: 'This is the details content panel.' } },
+          view: {
+            title: { text: 'Details' },
+            layout: 'line_text',
+            details: { text: 'This is the details content panel.' },
+          },
           destination: { value: 'details' },
         },
         {
           id: 'tab-reviews',
-          view: { title: { text: 'Reviews' }, layout: 'line_text', details: { text: 'This is the reviews content panel.' } },
+          view: {
+            title: { text: 'Reviews' },
+            layout: 'line_text',
+            details: { text: 'This is the reviews content panel.' },
+          },
           destination: { value: 'reviews' },
         },
       ],
