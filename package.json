@@ -1,7 +1,7 @@
 {
   "name": "genui_demo",
   "private": true,
-  "version": "0.1.15",
+  "version": "0.1.16",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -27,7 +27,7 @@
     "@radix-ui/react-tabs": "^1.1.12",
     "@sudobility/components": "^5.0.57",
     "@sudobility/design": "^1.1.28",
-    "@sudobility/genui": "^0.1.23",
+    "@sudobility/genui": "^0.1.24",
     "@sudobility/types": "^1.9.61",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
