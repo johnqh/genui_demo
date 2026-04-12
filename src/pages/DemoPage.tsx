@@ -44,12 +44,7 @@ export default function DemoPage() {
     </div>
   );
 
-  const detailContent = (
-    <CategoryDetail
-      categoryId={selectedCategory.id}
-      onAction={handleAction}
-    />
-  );
+  const detailContent = <CategoryDetail categoryId={selectedCategory.id} onAction={handleAction} />;
 
   return (
     <div className="h-screen flex flex-col overflow-hidden">

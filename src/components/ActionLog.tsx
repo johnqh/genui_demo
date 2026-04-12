@@ -34,9 +34,7 @@ export default function ActionLog({ entries, onClear }: ActionLogProps) {
         )}
         {entries.map((entry, i) => (
           <div key={i} className="py-0.5 text-theme-text-secondary">
-            <span className="text-theme-text-tertiary">
-              {entry.timestamp.toLocaleTimeString()}
-            </span>{' '}
+            <span className="text-theme-text-tertiary">{entry.timestamp.toLocaleTimeString()}</span>{' '}
             <span className="text-blue-500">{entry.renderableId}</span>{' '}
             <span className="text-theme-text-primary">{entry.value}</span>
           </div>
