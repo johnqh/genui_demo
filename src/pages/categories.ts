@@ -23,4 +23,5 @@ export const CATEGORIES: Category[] = [
     description: 'Lines, paragraphs, images, center, footer',
   },
   { id: 'spacing', label: 'Spacing', description: 'Horizontal and vertical spacers' },
+  { id: 'maps', label: 'Maps', description: 'Map pins and collection maps' },
 ];

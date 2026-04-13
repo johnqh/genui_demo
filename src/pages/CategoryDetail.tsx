@@ -2,6 +2,8 @@ import { GenUI } from '@sudobility/genui';
 import type { GenUIActionHandler, IRenderable } from '@sudobility/genui';
 import { categoryData } from '@/data';
 
+const googleMapsApiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string | undefined;
+
 interface CategoryDetailProps {
   categoryId: string;
   onAction: GenUIActionHandler;
@@ -24,7 +26,7 @@ export default function CategoryDetail({ categoryId, onAction }: CategoryDetailP
             {r.view?.layout}
           </code>
           <div className="border border-theme-border rounded-lg p-4 bg-theme-bg-primary">
-            <GenUI renderable={r} onAction={onAction} />
+            <GenUI renderable={r} onAction={onAction} googleMapsApiKey={googleMapsApiKey} />
           </div>
         </div>
       ))}

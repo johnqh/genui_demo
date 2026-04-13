@@ -5,6 +5,7 @@ import { controlsData } from './controls';
 import { collectionsData } from './collections';
 import { displayData } from './display';
 import { spacingData } from './spacing';
+import { mapsData } from './maps';
 
 export const categoryData: Record<string, IRenderable[]> = {
   actions: actionsData,
@@ -13,4 +14,5 @@ export const categoryData: Record<string, IRenderable[]> = {
   collections: collectionsData,
   display: displayData,
   spacing: spacingData,
+  maps: mapsData,
 };

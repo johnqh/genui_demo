@@ -1,7 +1,7 @@
 {
   "name": "genui_demo",
   "private": true,
-  "version": "0.1.17",
+  "version": "0.1.18",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -27,8 +27,9 @@
     "@radix-ui/react-tabs": "^1.1.12",
     "@sudobility/components": "^5.0.57",
     "@sudobility/design": "^1.1.28",
-    "@sudobility/genui": "^0.1.24",
+    "@sudobility/genui": "^0.1.25",
     "@sudobility/types": "^1.9.61",
+    "@vis.gl/react-google-maps": "^1.8.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "i18next": "^25.5.3",
