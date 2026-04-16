@@ -25,9 +25,7 @@ export default function CategoryDetail({ categoryId, onAction }: CategoryDetailP
           <code className="text-xs text-theme-text-tertiary bg-theme-bg-tertiary px-2 py-0.5 rounded">
             {r.view?.layout}
           </code>
-          <div className="border border-theme-border rounded-lg p-4 bg-theme-bg-primary">
-            <GenUI renderable={r} onAction={onAction} googleMapsApiKey={googleMapsApiKey} />
-          </div>
+          <GenUI renderable={r} onAction={onAction} googleMapsApiKey={googleMapsApiKey} />
         </div>
       ))}
     </div>

@@ -49,7 +49,7 @@ src/
 ## Commands
 
 ```bash
-bun run dev            # Vite dev server (port 5199)
+bun run dev            # Vite dev server (port 5134)
 bun run build          # TypeScript check + Vite build
 bun run typecheck      # TypeScript check
 bun run lint           # Run ESLint

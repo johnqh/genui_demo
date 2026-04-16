@@ -19,7 +19,7 @@ bun run dev
 ## Development
 
 ```bash
-bun run dev          # Vite dev server (port 5199)
+bun run dev          # Vite dev server (port 5134)
 bun run build        # Production build
 bun run test         # Run Vitest
 bun run lint         # ESLint
