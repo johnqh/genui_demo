@@ -13,10 +13,10 @@
         "@radix-ui/react-slot": "^1.2.3",
         "@radix-ui/react-switch": "^1.2.5",
         "@radix-ui/react-tabs": "^1.1.12",
-        "@sudobility/components": "^5.0.62",
-        "@sudobility/design": "^1.1.29",
-        "@sudobility/genui": "^0.1.46",
-        "@sudobility/genui_types": "^0.0.1",
+        "@sudobility/components": "^5.0.63",
+        "@sudobility/design": "^1.1.30",
+        "@sudobility/genui": "^0.1.47",
+        "@sudobility/genui_types": "^0.0.2",
         "@sudobility/types": "^1.9.61",
         "@vis.gl/react-google-maps": "^1.8.3",
         "class-variance-authority": "^0.7.1",
@@ -334,13 +334,13 @@
 
     "@rollup/rollup-win32-x64-msvc": ["@rollup/rollup-win32-x64-msvc@4.60.1", "", { "os": "win32", "cpu": "x64" }, "sha512-lWMnixq/QzxyhTV6NjQJ4SFo1J6PvOX8vUx5Wb4bBPsEb+8xZ89Bz6kOXpfXj9ak9AHTQVQzlgzBEc1SyM27xQ=="],
 
-    "@sudobility/components": ["@sudobility/components@5.0.62", "", { "optionalDependencies": { "@rollup/rollup-linux-x64-gnu": "4.52.5", "@rollup/rollup-linux-x64-musl": "4.52.5" }, "peerDependencies": { "@heroicons/react": ">=2.0.0", "@radix-ui/react-alert-dialog": ">=1.0.0", "@radix-ui/react-dialog": ">=1.0.0", "@radix-ui/react-label": ">=2.0.0", "@radix-ui/react-select": ">=2.0.0", "@radix-ui/react-slot": ">=1.0.0", "@radix-ui/react-switch": ">=1.0.0", "@radix-ui/react-tabs": ">=1.0.0", "@sudobility/design": "^1.1.29", "@sudobility/types": "^1.9.61", "class-variance-authority": ">=0.7.0", "clsx": ">=2.0.0", "i18next": ">=23.0.0", "react": ">=18.0.0", "react-dom": ">=18.0.0", "react-i18next": ">=14.0.0", "react-router-dom": ">=6.0.0", "tailwind-merge": ">=2.0.0", "web-vitals": ">=3.0.0" } }, "sha512-0/OhgwKMCFNZYcwhGlJXyCyJcb6LSaOdoF+OA9zANXmB3IOq4tpV2noItowxQT3jeTcfH6oGXEFLMHP4IMvD9g=="],
+    "@sudobility/components": ["@sudobility/components@5.0.63", "", { "optionalDependencies": { "@rollup/rollup-linux-x64-gnu": "4.52.5", "@rollup/rollup-linux-x64-musl": "4.52.5" }, "peerDependencies": { "@heroicons/react": ">=2.0.0", "@radix-ui/react-alert-dialog": ">=1.0.0", "@radix-ui/react-dialog": ">=1.0.0", "@radix-ui/react-label": ">=2.0.0", "@radix-ui/react-select": ">=2.0.0", "@radix-ui/react-slot": ">=1.0.0", "@radix-ui/react-switch": ">=1.0.0", "@radix-ui/react-tabs": ">=1.0.0", "@sudobility/design": "^1.1.30", "@sudobility/types": "^1.9.61", "class-variance-authority": ">=0.7.0", "clsx": ">=2.0.0", "i18next": ">=23.0.0", "react": ">=18.0.0", "react-dom": ">=18.0.0", "react-i18next": ">=14.0.0", "react-router-dom": ">=6.0.0", "tailwind-merge": ">=2.0.0", "web-vitals": ">=3.0.0" } }, "sha512-kfazuAKY3K8z/GwyvX1qFVeu9FuzbWl+LO4VgkrZhw8s+8GjvYvenYsLw+KrzQR/2+eCb87VLTOBnrai0gBM0A=="],
 
-    "@sudobility/design": ["@sudobility/design@1.1.29", "", { "peerDependencies": { "clsx": ">=2.0.0", "tailwind-merge": ">=2.0.0" } }, "sha512-M7crdNWhdjetVE++eU/ZGYpPrS3wG7/kEQBbxj5gHBtWQK2htyZuSIP+TvSGOh2pylXImciFxmB23rI0/NssoQ=="],
+    "@sudobility/design": ["@sudobility/design@1.1.30", "", { "peerDependencies": { "clsx": ">=2.0.0", "tailwind-merge": ">=2.0.0" } }, "sha512-yENSXWuMa9fxGGtvZUQFc94a2Iz/6R8qH4k4FU3qdX3eJYgATFWH13I3xNzM/cyt8Pm8THwiSNCnKjV0092NVg=="],
 
-    "@sudobility/genui": ["@sudobility/genui@0.1.46", "", { "peerDependencies": { "@sudobility/components": "^5.0.62", "@sudobility/design": "^1.1.29", "@sudobility/genui_types": "^0.0.1", "@vis.gl/react-google-maps": "^1.8.3", "react": ">=18.0.0", "react-dom": ">=18.0.0", "swiper": "^12.1.3" } }, "sha512-59+Oi7NPMoF88pqfe9AywH9MzkspuHa5WJi5lg1wqE3u5e54BJaKmv0iQirJdgJHfIaubLvEZsvr/FntUZKxBw=="],
+    "@sudobility/genui": ["@sudobility/genui@0.1.47", "", { "peerDependencies": { "@sudobility/components": "^5.0.63", "@sudobility/design": "^1.1.30", "@sudobility/genui_types": "^0.0.2", "@vis.gl/react-google-maps": "^1.8.3", "react": ">=18.0.0", "react-dom": ">=18.0.0", "swiper": "^12.1.3" } }, "sha512-bScjdexolG6t++eMWl0QOJ6vbX9IQG3P/XiIg8oCg6q+kR6rDR/QELQX2nGg1J0InumzbYzFwmXmCUxRY1IhSA=="],
 
-    "@sudobility/genui_types": ["@sudobility/genui_types@0.0.1", "", {}, "sha512-upYoJVpy2y+cgIW2TwJtMuPhxzis42Dk5X6UtViTSh61GwnWofwK2atXsOrtDXPFj9vMrxJOVEOEu8UDR90p7g=="],
+    "@sudobility/genui_types": ["@sudobility/genui_types@0.0.2", "", {}, "sha512-94bhW5r+aaWTNZMNEwMJ/AjfZf/46a07ED6zlN+hrL0BlVPJcCNXWxROec6oP9i3vp3HRdE/JHHHi4vfuYUzTg=="],
 
     "@sudobility/types": ["@sudobility/types@1.9.61", "", {}, "sha512-SODGpstB/iKfK3H/4BvJx/FBcc1h3gutUjGotyxN19VnOfWyzaDoEmW7eyoxOAYhZyXMXagSiii+NIEZvuxKog=="],
 
