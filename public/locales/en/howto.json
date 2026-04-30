@@ -1,0 +1,30 @@
+{
+  "webApp": {
+    "description": "Interactive demo showcasing all UI controls rendered by the GenUI component library.",
+    "features": [
+      "Live preview of 60+ UI component types",
+      "Action event logging",
+      "Dark mode support",
+      "Category-based navigation",
+      "Responsive master-detail layout"
+    ]
+  },
+  "home": {
+    "name": "How to Explore UI Components with GenUI Demo",
+    "description": "Browse and interact with all available GenUI UI components organized by category.",
+    "steps": [
+      {
+        "name": "Choose a Category",
+        "text": "Select a category from the sidebar such as Actions, Text Inputs, Controls, Collections, Display, or Spacing to see related components."
+      },
+      {
+        "name": "Interact with Components",
+        "text": "Click buttons, fill inputs, toggle switches, and interact with each component to see how it behaves."
+      },
+      {
+        "name": "Review the Action Log",
+        "text": "Check the action log at the bottom of the screen to see events fired by each component interaction."
+      }
+    ]
+  }
+}

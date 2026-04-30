@@ -1,0 +1,16 @@
+{
+  "seo": {
+    "demo": {
+      "title": "GenUI Demo - Interactive UI Component Showcase",
+      "description": "Explore and interact with 60+ UI components rendered by the GenUI library. Browse actions, inputs, controls, collections, display elements, and more.",
+      "keywords": [
+        "GenUI",
+        "UI components",
+        "component demo",
+        "React components",
+        "interactive demo",
+        "UI library"
+      ]
+    }
+  }
+}

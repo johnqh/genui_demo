@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { MasterDetailLayout } from '@sudobility/components';
 import DemoTopBar from '@/components/DemoTopBar';
 import ActionLog from '@/components/ActionLog';
+import SEOHead from '@/components/SEOHead';
+import { buildHowToSchema } from '@/components/buildHowToSchema';
 import { useActionLog } from '@/hooks/useActionLog';
 import { CATEGORIES } from './categories';
 import CategoryDetail from './CategoryDetail';
@@ -13,6 +16,18 @@ export default function DemoPage() {
   const navigate = useNavigate();
   const [mobileView, setMobileView] = useState<'navigation' | 'content'>('navigation');
   const { entries, addEntry, clearEntries } = useActionLog();
+  const { t } = useTranslation('app');
+  const { t: tHowTo } = useTranslation('howto');
+
+  const seoTitle = t('seo.demo.title');
+  const seoDescription = t('seo.demo.description');
+  const seoKeywords = t('seo.demo.keywords', { returnObjects: true }) as string[];
+
+  const howToSchema = buildHowToSchema(
+    tHowTo('home.name'),
+    tHowTo('home.description'),
+    tHowTo('home.steps', { returnObjects: true }) as { name: string; text: string }[]
+  );
 
   const selectedCategory = CATEGORIES.find(c => c.id === category) ?? CATEGORIES[0];
 
@@ -48,6 +63,12 @@ export default function DemoPage() {
 
   return (
     <div className="h-screen flex flex-col overflow-hidden">
+      <SEOHead
+        title={seoTitle}
+        description={seoDescription}
+        keywords={seoKeywords}
+        structuredData={howToSchema}
+      />
       <DemoTopBar />
       <div className="flex-1 min-h-0 flex flex-col">
         <MasterDetailLayout
