@@ -17,7 +17,7 @@
         "@sudobility/design": "^1.1.30",
         "@sudobility/genui": "^0.1.49",
         "@sudobility/genui_types": "^0.0.2",
-        "@sudobility/seo_lib": "^0.0.20",
+        "@sudobility/seo_lib": "^0.0.21",
         "@sudobility/types": "^1.9.62",
         "@vis.gl/react-google-maps": "^1.8.3",
         "class-variance-authority": "^0.7.1",
@@ -343,7 +343,7 @@
 
     "@sudobility/genui_types": ["@sudobility/genui_types@0.0.2", "", {}, "sha512-94bhW5r+aaWTNZMNEwMJ/AjfZf/46a07ED6zlN+hrL0BlVPJcCNXWxROec6oP9i3vp3HRdE/JHHHi4vfuYUzTg=="],
 
-    "@sudobility/seo_lib": ["@sudobility/seo_lib@0.0.20", "", { "peerDependencies": { "i18next": ">=23.0.0", "react": "^18.0.0 || ^19.0.0", "react-dom": "^18.0.0 || ^19.0.0", "react-helmet-async": ">=2.0.0", "react-i18next": ">=14.0.0", "react-router-dom": ">=6.0.0" }, "optionalPeers": ["i18next", "react-i18next", "react-router-dom"] }, "sha512-Q55uqo31vLQ4rnW9kpeqzSxddtn/Gwgt9BA900NsZNXgaWJdJJ3jZHC/I+dh4Ei21oi+IvsbbHxpwJBlM01EfQ=="],
+    "@sudobility/seo_lib": ["@sudobility/seo_lib@0.0.21", "", { "peerDependencies": { "i18next": ">=23.0.0", "react": "^18.0.0 || ^19.0.0", "react-dom": "^18.0.0 || ^19.0.0", "react-helmet-async": ">=2.0.0", "react-i18next": ">=14.0.0", "react-router-dom": ">=6.0.0" }, "optionalPeers": ["i18next", "react-i18next", "react-router-dom"] }, "sha512-jX29rp7LJtvXuK+LA/evcfXfYCKjkNb5FPLSiQAClSH38L810cTzPwpQdHWsEdyjmeCIj2Xz14Uleibj0XgUQw=="],
 
     "@sudobility/types": ["@sudobility/types@1.9.62", "", {}, "sha512-GOkz5oE7Fmlolba2aemBF2fKPtH4I2lHAjVta+fqZAoAV72DQaWYzVEjTwKZs/ACY/g9Z262IDa7lEh+IOrn7w=="],
 
