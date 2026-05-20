@@ -46,6 +46,10 @@ src/
     └── app.test.tsx            # Smoke tests
 ```
 
+## Configuration Files
+
+- `seo.config.mjs` - SEO route config for generate-seo-assets.mjs (sitemap.xml, robots.txt, per-route meta)
+
 ## Commands
 
 ```bash
@@ -54,6 +58,7 @@ bun run build          # TypeScript check + Vite build
 bun run typecheck      # TypeScript check
 bun run lint           # Run ESLint
 bun run test           # Run Vitest
+bun run seo:fetch      # Download generate-seo-assets.mjs to /tmp
 bun run verify         # typecheck + lint + test
 ```
 
