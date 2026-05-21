@@ -1,7 +1,7 @@
 {
   "name": "genui_demo",
   "private": true,
-  "version": "0.1.48",
+  "version": "0.1.49",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -26,11 +26,11 @@
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-switch": "^1.2.5",
     "@radix-ui/react-tabs": "^1.1.12",
-    "@sudobility/components": "^5.0.66",
+    "@sudobility/components": "^5.0.68",
     "@sudobility/design": "^1.1.30",
-    "@sudobility/genui": "^0.1.50",
+    "@sudobility/genui": "^0.1.52",
     "@sudobility/genui_types": "^0.0.2",
-    "@sudobility/seo_lib": "^0.0.21",
+    "@sudobility/seo_lib": "^0.0.22",
     "@sudobility/types": "^1.9.62",
     "@vis.gl/react-google-maps": "^1.8.3",
     "class-variance-authority": "^0.7.1",
