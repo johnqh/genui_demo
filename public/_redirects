@@ -1,0 +1,4 @@
+# Serve pre-rendered HTML for SEO routes (takes priority over SPA fallback)
+
+# SPA fallback for all other routes
+/* /index.html 200
