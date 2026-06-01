@@ -1,7 +1,7 @@
 {
   "name": "genui_demo",
   "private": true,
-  "version": "0.1.51",
+  "version": "0.1.52",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -30,7 +30,7 @@
     "@sudobility/design": "^1.1.30",
     "@sudobility/genui": "^0.1.54",
     "@sudobility/genui_types": "^0.0.2",
-    "@sudobility/seo_lib": "^0.0.23",
+    "@sudobility/seo_lib": "^0.0.25",
     "@sudobility/types": "^1.9.62",
     "@vis.gl/react-google-maps": "^1.8.3",
     "class-variance-authority": "^0.7.1",
