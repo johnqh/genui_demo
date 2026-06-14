@@ -14,7 +14,7 @@ export default {
     en: 'en',
   },
 
-  primaryDomain: 'localhost',
+  primaryDomain: process.env.VITE_APP_DOMAIN || 'localhost',
   appName: APP_NAME,
   appDomain: process.env.VITE_APP_DOMAIN || 'localhost',
   robotsDisallowPaths: [],
