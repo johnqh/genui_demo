@@ -35,6 +35,9 @@ export default function ActionLog({ entries, onClear }: ActionLogProps) {
         {entries.map((entry, i) => (
           <div key={i} className="py-0.5 text-theme-text-secondary">
             <span className="text-theme-text-tertiary">{entry.timestamp.toLocaleTimeString()}</span>{' '}
+            {/* Decorative debug-log identifier highlight (syntax-coloring of the
+                renderable id). Kept as a literal palette class: this app's theme
+                tokens define no accent color to map it to. */}
             <span className="text-blue-500">{entry.renderableId}</span>{' '}
             <span className="text-theme-text-primary">{entry.value}</span>
           </div>

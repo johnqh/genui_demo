@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { MasterDetailLayout } from '@sudobility/components';
+import { colors } from '@sudobility/design';
 import DemoTopBar from '@/components/DemoTopBar';
 import ActionLog from '@/components/ActionLog';
 import SEOHead from '@/components/SEOHead';
@@ -48,7 +49,11 @@ export default function DemoPage() {
           onClick={() => handleCategorySelect(cat.id)}
           className={`w-full text-left px-4 py-3 transition-colors ${
             cat.id === selectedCategory.id
-              ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 border-r-2 border-blue-600'
+              ? // Selected: primary-tinted bg/text from the design system. The
+                // border-r-2 accent indicator stays a literal palette class: this
+                // app's theme tokens define no accent/primary border color, so a
+                // semantic swap would need new design tokens (out of scope here).
+                `${colors.component.badge.primary.base} ${colors.component.badge.primary.dark} border-r-2 border-blue-600`
               : 'text-theme-text-primary hover:bg-theme-hover-bg'
           }`}
         >
