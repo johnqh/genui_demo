@@ -1,7 +1,7 @@
 {
   "name": "genui_demo",
   "private": true,
-  "version": "0.1.59",
+  "version": "0.1.60",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -26,9 +26,9 @@
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-switch": "^1.2.5",
     "@radix-ui/react-tabs": "^1.1.12",
-    "@sudobility/components": "^5.0.89",
+    "@sudobility/components": "^5.0.90",
     "@sudobility/design": "^1.1.40",
-    "@sudobility/genui": "^0.1.76",
+    "@sudobility/genui": "^0.1.78",
     "@sudobility/genui_types": "^0.0.2",
     "@sudobility/seo_lib": "^0.0.32",
     "@sudobility/types": "^1.9.62",
