@@ -17,6 +17,11 @@ export default {
   primaryDomain: process.env.VITE_APP_DOMAIN || 'localhost',
   appName: APP_NAME,
   appDomain: process.env.VITE_APP_DOMAIN || 'localhost',
+  // Canonical URLs have NO trailing slash (source of truth), including the
+  // language root (/en). v2 of the generator defaults to trailing slashes, so
+  // this flag must be present to preserve the no-slash convention shared with
+  // seo_lib's runtime canonical and functions/_middleware.js. See sudobility/docs/SEO.md.
+  trailingSlashUrls: false,
   robotsDisallowPaths: [],
 
   routes: [
