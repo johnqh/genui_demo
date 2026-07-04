@@ -54,11 +54,11 @@ export default function DemoPage() {
                 // app's theme tokens define no accent/primary border color, so a
                 // semantic swap would need new design tokens (out of scope here).
                 `${colors.component.badge.primary.base} ${colors.component.badge.primary.dark} border-r-2 border-blue-600`
-              : 'text-theme-text-primary hover:bg-theme-hover-bg'
+              : 'text-foreground hover:bg-accent'
           }`}
         >
           <div className="font-medium text-sm">{cat.label}</div>
-          <div className="text-xs text-theme-text-tertiary mt-0.5">{cat.description}</div>
+          <div className="text-xs text-muted-foreground mt-0.5">{cat.description}</div>
         </button>
       ))}
     </div>

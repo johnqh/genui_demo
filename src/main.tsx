@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { configureTheme } from '@sudobility/design';
-import { defaultTheme } from '@sudobility/design/themes';
+import { defaultTheme, generateThemeCSS } from '@sudobility/design/themes';
 import './index.css';
 import './i18n';
 import App from './App';
@@ -11,6 +11,12 @@ import App from './App';
 // variables in index.css + createTailwindPreset() in tailwind.config.js —
 // matching the RN apps and making all design styles + light/dark work.
 configureTheme(defaultTheme);
+if (typeof document !== 'undefined') {
+  const styleEl = document.createElement('style');
+  styleEl.id = 'sudobility-design-theme';
+  styleEl.textContent = generateThemeCSS(defaultTheme);
+  document.head.appendChild(styleEl);
+}
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
